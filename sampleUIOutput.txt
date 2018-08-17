@@ -1,0 +1,580 @@
+TRAVEL BOOKING SYSTEM
+=====================
+Main Menu -----------
+1: Work with Airline System
+2: Work with Cruise Ship System 
+3: Work with Rail System
+4: Quit
+Enter your selection: 1
+
+TRAVEL BOOKING SYSTEM
+=====================
+AIR System Menu
+1: Read input file
+2: Change price for individual section
+3: Look for available bookings
+4: Change standard section pricing
+5: Book a specific accommodation
+6: Book by preference
+7: Display system details
+8: Write my state to output file
+9: Enter admin mode
+10: Return to main menu
+Enter your selection: 9
+
+TRAVEL BOOKING SYSTEM
+=====================
+AIR System Menu
+1: Read input file
+2: Change price for individual section
+3: Look for available bookings
+4: Change standard section pricing
+5: Book a specific accommodation
+6: Book by preference
+7: Display system details
+8: Write my state to output file
+9: Return to main menu
+10: (admin) Create a new Airport
+11: (admin) Create a new Airline
+12: (admin) Create a new Flight
+13: (admin) Create a new Flight section
+14: Exit admin mode
+Enter your selection: 10
+Enter the new Airport name:  geg
+
+TRAVEL BOOKING SYSTEM
+=====================
+AIR System Menu
+1: Read input file
+2: Change price for individual section
+3: Look for available bookings
+4: Change standard section pricing
+5: Book a specific accommodation
+6: Book by preference
+7: Display system details
+8: Write my state to output file
+9: Return to main menu
+10: (admin) Create a new Airport
+11: (admin) Create a new Airline
+12: (admin) Create a new Flight
+13: (admin) Create a new Flight section
+14: Exit admin mode
+Enter your selection: 10
+Enter the new Airport name:  mia
+
+TRAVEL BOOKING SYSTEM
+=====================
+AIR System Menu
+1: Read input file
+2: Change price for individual section
+3: Look for available bookings
+4: Change standard section pricing
+5: Book a specific accommodation
+6: Book by preference
+7: Display system details
+8: Write my state to output file
+9: Return to main menu
+10: (admin) Create a new Airport
+11: (admin) Create a new Airline
+12: (admin) Create a new Flight
+13: (admin) Create a new Flight section
+14: Exit admin mode
+Enter your selection: 10
+Enter the new Airport name:  mia
+Duplicate Airport 'ACTBS.Airport@506e1b77' specified.
+
+TRAVEL BOOKING SYSTEM
+=====================
+AIR System Menu
+1: Read input file
+2: Change price for individual section
+3: Look for available bookings
+4: Change standard section pricing
+5: Book a specific accommodation
+6: Book by preference
+7: Display system details
+8: Write my state to output file
+9: Return to main menu
+10: (admin) Create a new Airport
+11: (admin) Create a new Airline
+12: (admin) Create a new Flight
+13: (admin) Create a new Flight section
+14: Exit admin mode
+Enter your selection: 11
+Enter the new Airline name:  delta
+
+TRAVEL BOOKING SYSTEM
+=====================
+AIR System Menu
+1: Read input file
+2: Change price for individual section
+3: Look for available bookings
+4: Change standard section pricing
+5: Book a specific accommodation
+6: Book by preference
+7: Display system details
+8: Write my state to output file
+9: Return to main menu
+10: (admin) Create a new Airport
+11: (admin) Create a new Airline
+12: (admin) Create a new Flight
+13: (admin) Create a new Flight section
+14: Exit admin mode
+Enter your selection: 11
+Enter the new Airline name:  usair
+
+TRAVEL BOOKING SYSTEM
+=====================
+AIR System Menu
+1: Read input file
+2: Change price for individual section
+3: Look for available bookings
+4: Change standard section pricing
+5: Book a specific accommodation
+6: Book by preference
+7: Display system details
+8: Write my state to output file
+9: Return to main menu
+10: (admin) Create a new Airport
+11: (admin) Create a new Airline
+12: (admin) Create a new Flight
+13: (admin) Create a new Flight section
+14: Exit admin mode
+Enter your selection: 12
+
+TRAVEL BOOKING SYSTEM
+=====================
+Choose Airline: 
+1: DELTA
+2: USAIR
+Enter your selection: 1
+
+TRAVEL BOOKING SYSTEM
+=====================
+Select origin Airport: 
+1: GEG
+2: MIA
+Enter your selection: 2
+
+TRAVEL BOOKING SYSTEM
+=====================
+Select destination Airport: 
+1: GEG
+2: MIA
+Enter your selection: 1
+Enter the departure date (YYYY-MM-DD): 2018-xx-xx
+Enter the departure date (YYYY-MM-DD): 2018-06-17
+Enter the trip ID: abc123
+
+TRAVEL BOOKING SYSTEM
+=====================
+AIR System Menu
+1: Read input file
+2: Change price for individual section
+3: Look for available bookings
+4: Change standard section pricing
+5: Book a specific accommodation
+6: Book by preference
+7: Display system details
+8: Write my state to output file
+9: Return to main menu
+10: (admin) Create a new Airport
+11: (admin) Create a new Airline
+12: (admin) Create a new Flight
+13: (admin) Create a new Flight section
+14: Exit admin mode
+Enter your selection: 7
+
+Airport: GEG
+Airport: MIA
+
+Carrier: DELTA
+  Trip: ABC123 MIA -> GEG departs 2018-06-17
+
+Carrier: USAIR
+
+
+TRAVEL BOOKING SYSTEM
+=====================
+AIR System Menu
+1: Read input file
+2: Change price for individual section
+3: Look for available bookings
+4: Change standard section pricing
+5: Book a specific accommodation
+6: Book by preference
+7: Display system details
+8: Write my state to output file
+9: Return to main menu
+10: (admin) Create a new Airport
+11: (admin) Create a new Airline
+12: (admin) Create a new Flight
+13: (admin) Create a new Flight section
+14: Exit admin mode
+Enter your selection: 13
+
+TRAVEL BOOKING SYSTEM
+=====================
+Choose Airline: 
+1: DELTA
+2: USAIR
+Enter your selection: 1
+
+TRAVEL BOOKING SYSTEM
+=====================
+Choose Flight ID: 
+1: ABC123
+Enter your selection: 1
+
+TRAVEL BOOKING SYSTEM
+=====================
+Choose a section layout: 
+1: flightS
+2: flightM
+3: flightW
+Enter your selection: 1
+
+TRAVEL BOOKING SYSTEM
+=====================
+Choose a class: 
+1: F
+2: E
+3: B
+Enter your selection: 2
+Number of rows: 7
+Cost per booking: 175
+
+TRAVEL BOOKING SYSTEM
+=====================
+AIR System Menu
+1: Read input file
+2: Change price for individual section
+3: Look for available bookings
+4: Change standard section pricing
+5: Book a specific accommodation
+6: Book by preference
+7: Display system details
+8: Write my state to output file
+9: Return to main menu
+10: (admin) Create a new Airport
+11: (admin) Create a new Airline
+12: (admin) Create a new Flight
+13: (admin) Create a new Flight section
+14: Exit admin mode
+Enter your selection: 7
+
+Airport: GEG
+Airport: MIA
+
+Carrier: DELTA
+  Trip: ABC123 MIA -> GEG departs 2018-06-17
+    E Section (Cost: $175):
+      Row 1   . ..
+      Row 2   . ..
+      Row 3   . ..
+      Row 4   . ..
+      Row 5   . ..
+      Row 6   . ..
+      Row 7   . ..
+
+Carrier: USAIR
+
+
+TRAVEL BOOKING SYSTEM
+=====================
+AIR System Menu
+1: Read input file
+2: Change price for individual section
+3: Look for available bookings
+4: Change standard section pricing
+5: Book a specific accommodation
+6: Book by preference
+7: Display system details
+8: Write my state to output file
+9: Return to main menu
+10: (admin) Create a new Airport
+11: (admin) Create a new Airline
+12: (admin) Create a new Flight
+13: (admin) Create a new Flight section
+14: Exit admin mode
+Enter your selection: 5
+
+TRAVEL BOOKING SYSTEM
+=====================
+AIR System Menu
+1: Read input file
+2: Change price for individual section
+3: Look for available bookings
+4: Change standard section pricing
+5: Book a specific accommodation
+6: Book by preference
+7: Display system details
+8: Write my state to output file
+9: Return to main menu
+10: (admin) Create a new Airport
+11: (admin) Create a new Airline
+12: (admin) Create a new Flight
+13: (admin) Create a new Flight section
+14: Exit admin mode
+Enter your selection: 14
+
+TRAVEL BOOKING SYSTEM
+=====================
+AIR System Menu
+1: Read input file
+2: Change price for individual section
+3: Look for available bookings
+4: Change standard section pricing
+5: Book a specific accommodation
+6: Book by preference
+7: Display system details
+8: Write my state to output file
+9: Return to main menu
+10: Enter admin mode
+Enter your selection: 1
+Enter File Name (enter EXIT to back out): AMSin.txt
+
+IMPORT SUCCESSFUL
+
+
+
+TRAVEL BOOKING SYSTEM
+=====================
+AIR System Menu
+1: Read input file
+2: Change price for individual section
+3: Look for available bookings
+4: Change standard section pricing
+5: Book a specific accommodation
+6: Book by preference
+7: Display system details
+8: Write my state to output file
+9: Return to main menu
+10: Enter admin mode
+Enter your selection: 9
+
+TRAVEL BOOKING SYSTEM
+=====================
+Main Menu -----------
+1: Work with Airline System
+2: Work with Cruise Ship System 
+3: Work with Rail System
+4: Quit
+Enter your selection: 2
+
+TRAVEL BOOKING SYSTEM
+=====================
+SEA System Menu
+1: Read input file
+2: Change price for individual section
+3: Look for available bookings
+4: Change standard section pricing
+5: Book a specific accommodation
+6: Book by preference
+7: Display system details
+8: Write my state to output file
+9: Enter admin mode
+10: Return to main menu
+Enter your selection: 1
+Enter File Name (enter EXIT to back out): AMSin.txt
+
+IMPORT SUCCESSFUL
+
+
+
+TRAVEL BOOKING SYSTEM
+=====================
+SEA System Menu
+1: Read input file
+2: Change price for individual section
+3: Look for available bookings
+4: Change standard section pricing
+5: Book a specific accommodation
+6: Book by preference
+7: Display system details
+8: Write my state to output file
+9: Enter admin mode
+10: Return to main menu
+Enter your selection: 7
+
+Seaport DEN
+Seaport NYC
+Seaport SEA
+Seaport LAX
+
+Carrier: AMER
+  Trip: AA1 DEN -> LAX departs 2011-10-08
+    E Section (Cost: $200):
+      Row 1   . ..
+      Row 2   . ..
+      Row 3   . ..
+      Row 4   . ..
+    F Section (Cost: $500):
+      Row 1   . ..
+      Row 2   . ..
+  Trip: AA2 LAX -> DEN departs 2011-08-09
+    E Section (Cost: $200):
+      Row 1   . ..
+      Row 2   . ..
+      Row 3   . ..
+      Row 4   . ..
+      Row 5   . ..
+    F Section (Cost: $500):
+      Row 1   . ..
+      Row 2   . ..
+      Row 3   . ..
+
+Carrier: UNTD
+  Trip: UA21 NYC -> SEA departs 2011-11-08
+    E Section (Cost: $300):
+      Row 1   . ..
+      Row 2   . ..
+      Row 3   . ..
+      Row 4   . ..
+      Row 5   . ..
+      Row 6   . ..
+    F Section (Cost: $800):
+      Row 1   . ..
+      Row 2   . ..
+      Row 3   . ..
+  Trip: UA12 SEA -> DEN departs 2011-08-09
+    B Section (Cost: $700):
+      Row 1   . ..
+      Row 2   . ..
+      Row 3   . ..
+      Row 4   . ..
+      Row 5   . ..
+    F Section (Cost: $1200):
+      Row 1   . ..
+      Row 2   . ..
+
+
+TRAVEL BOOKING SYSTEM
+=====================
+SEA System Menu
+1: Read input file
+2: Change price for individual section
+3: Look for available bookings
+4: Change standard section pricing
+5: Book a specific accommodation
+6: Book by preference
+7: Display system details
+8: Write my state to output file
+9: Enter admin mode
+10: Return to main menu
+Enter your selection: 10
+
+TRAVEL BOOKING SYSTEM
+=====================
+Main Menu -----------
+1: Work with Airline System
+2: Work with Cruise Ship System 
+3: Work with Rail System
+4: Quit
+Enter your selection: 1
+
+TRAVEL BOOKING SYSTEM
+=====================
+AIR System Menu
+1: Read input file
+2: Change price for individual section
+3: Look for available bookings
+4: Change standard section pricing
+5: Book a specific accommodation
+6: Book by preference
+7: Display system details
+8: Write my state to output file
+9: Enter admin mode
+10: Return to main menu
+Enter your selection: 7
+
+Airport: GEG
+Airport: MIA
+Airport: DEN
+Airport: NYC
+Airport: SEA
+Airport: LAX
+
+Carrier: DELTA
+  Trip: ABC123 MIA -> GEG departs 2018-06-17
+    E Section (Cost: $175):
+      Row 1   . ..
+      Row 2   . ..
+      Row 3   . ..
+      Row 4   . ..
+      Row 5   . ..
+      Row 6   . ..
+      Row 7   . ..
+
+Carrier: USAIR
+
+Carrier: AMER
+  Trip: AA1 DEN -> LAX departs 2011-10-08
+    E Section (Cost: $200):
+      Row 1   . ..
+      Row 2   . ..
+      Row 3   . ..
+      Row 4   . ..
+    F Section (Cost: $500):
+      Row 1   . ..
+      Row 2   . ..
+  Trip: AA2 LAX -> DEN departs 2011-08-09
+    E Section (Cost: $200):
+      Row 1   . ..
+      Row 2   . ..
+      Row 3   . ..
+      Row 4   . ..
+      Row 5   . ..
+    F Section (Cost: $500):
+      Row 1   . ..
+      Row 2   . ..
+      Row 3   . ..
+
+Carrier: UNTD
+  Trip: UA21 NYC -> SEA departs 2011-11-08
+    E Section (Cost: $300):
+      Row 1   . ..
+      Row 2   . ..
+      Row 3   . ..
+      Row 4   . ..
+      Row 5   . ..
+      Row 6   . ..
+    F Section (Cost: $800):
+      Row 1   . ..
+      Row 2   . ..
+      Row 3   . ..
+  Trip: UA12 SEA -> DEN departs 2011-08-09
+    B Section (Cost: $700):
+      Row 1   . ..
+      Row 2   . ..
+      Row 3   . ..
+      Row 4   . ..
+      Row 5   . ..
+    F Section (Cost: $1200):
+      Row 1   . ..
+      Row 2   . ..
+
+
+TRAVEL BOOKING SYSTEM
+=====================
+AIR System Menu
+1: Read input file
+2: Change price for individual section
+3: Look for available bookings
+4: Change standard section pricing
+5: Book a specific accommodation
+6: Book by preference
+7: Display system details
+8: Write my state to output file
+9: Enter admin mode
+10: Return to main menu
+Enter your selection: 10
+
+TRAVEL BOOKING SYSTEM
+=====================
+Main Menu -----------
+1: Work with Airline System
+2: Work with Cruise Ship System 
+3: Work with Rail System
+4: Quit
+Enter your selection: 4
