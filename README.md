@@ -4,9 +4,8 @@ Console App
 
 DESCRIPTION
 -----------
-
 Academic Project from Spring Quarter 2018, CSCD 349 - Design Patterns
-Collaborative app with Tony Kolstee. 
+Collaborative app with Tony Kolstee. Designed to read a trip manifest text file formatted in a specific way (parser designed around this format), then display trip data, allow the user to add new data to trip manifest and build trips off this data. Ability to export newly created trips in console appened back into the original text file or to a new one. Able to deliver prices for trips based on certain seating conditions user selects.
 
 HOW TO RUN
 ----------
