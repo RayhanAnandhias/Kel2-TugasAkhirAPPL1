@@ -14,6 +14,7 @@ Project created in IntelliJ.
 * Main entry point at "UI.java". 
 * During program launch, select menu option, "1: Work with Airline System".
 * In AIR System Menu; if you want to load a premade trip manifest, select option, "1: Read input file" and when prompted to "Enter File Name", use, "AMSin.txt" or "altAMSin.txt" to load data.
+* App can be run from "Tester.java". Standard conditional tester.
 
 KNOWN BUGS
 ----------
