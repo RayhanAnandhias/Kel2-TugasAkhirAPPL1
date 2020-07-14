@@ -15,7 +15,7 @@ No | Nama | NIM
 1. Cari kasus program yang berkisar 500 baris untuk bagian Layer bisnis (tidak berhubungan dg UI/API/Database) - Seperti kasus ATM di semester 2
 2. Lakukan reverse engineering dg pendekatan BDD dan DDD
 3. Lakukan refactoring dan lengkapi dg test-automation(unit testing, mock)
-4. Pikirkan 5 pengembangan fitur yg bernilai dan sesuaikan program Anda agar mudah dikembangkan dg mengikuti : 
+4. Pikirkan 5 pengembangan fitur yg bernilai dan sesuaikan program Anda agar mudah dikembangkan dg mengikuti: 
     - Solid Principles
     - Design Pattern
     - Aspect Oriented
