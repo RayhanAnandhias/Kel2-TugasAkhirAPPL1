@@ -1,3 +1,31 @@
+# Tugas Akhir APPL1 Kelompok 2
+Repositori ini berisi source code hasil pengerjaan Tugas Akhir Mata Kuliah APPL 1 Praktikum.
+
+Source code original kami fork dari repositori https://github.com/MattJett/Travel-Booking-System
+
+## Data Anggota Kelompok
+
+No | Nama | NIM
+------------ | ------------- | -------------
+1 | Dewanto Joyo Pramono | 1815240xx
+2 | Muhammad Fadhil | 1815240xx
+3 | Rayhan Azka A.P | 181524028
+
+## Deskripsi Tugas
+1. Cari kasus program yang berkisar 500 baris untuk bagian Layer bisnis (tidak berhubungan dg UI/API/Database) - Seperti kasus ATM di semester 2
+2. Lakukan reverse engineering dg pendekatan BDD dan DDD
+3. Lakukan refactoring dan lengkapi dg test-automation(unit testing, mock)
+4. Pikirkan 5 pengembangan fitur yg bernilai dan sesuaikan program Anda agar mudah dikembangkan dg mengikuti : 
+    - Solid Principles
+    - Design Pattern
+    - Aspect Oriented
+5. Lakukan implementasi pengembangan fitur
+
+## Mekanisme Pengerjaan
+1. Repository ada GIT
+2. Class Diagram yg mudah dibaca (dipecah2 jadi 1 halaman yg mudah dibaca, hindari detail)
+3. Historikan class diagram dan beri penjelasan untuk tiap perubahan
+
 # Travel-Booking-System
 
 Console App
