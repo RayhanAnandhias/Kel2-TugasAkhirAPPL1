@@ -7,8 +7,8 @@ Source code original kami fork dari repositori https://github.com/MattJett/Trave
 
 No | Nama | NIM
 ------------ | ------------- | -------------
-1 | Dewanto Joyo Pramono | 1815240xx
-2 | Muhammad Fadhil | 1815240xx
+1 | Dewanto Joyo Pramono | 181524005
+2 | Muhammad Fadhil | 181524020
 3 | Rayhan Azka A.P | 181524028
 
 ## Deskripsi Tugas
