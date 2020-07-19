@@ -29,15 +29,15 @@ No | Nama | NIM
 # Travel-Booking-System
 
 ## Pengembangan Fitur
-1.Fitur Menambah Stasiun (Admin)
+### 1.Fitur Menambah Stasiun (Admin)
 -----------
-2.Fitur Menambah Kereta (Admin)
+### 2.Fitur Menambah Kereta (Admin)
 -----------
-3.Fitur Menambah Train Trip (Admin)
+### 3.Fitur Menambah Train Trip (Admin)
 -----------
-4.Fitur Menambah Train Trip Section (Admin)
+### 4.Fitur Menambah Train Trip Section (Admin)
 -----------
-5.Fitur Booking Train Trip
+### 5.Fitur Booking Train Trip
 -----------
 
 ## Diagram Class History
