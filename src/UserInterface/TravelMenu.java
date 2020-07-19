@@ -178,15 +178,38 @@ public class TravelMenu extends Menu {
     }
 
     private void searchSeats(Object o) {
+        String or = choosePort("choose origin :");
+        if(or == null) {return;}
+        String dst = choosePort("choose destination :");
+        if(or == null) {return;}
+        mgr.findAvailableBookings(travelType, or, dst);
     }
 
     private void changePricing(Object o) {
+        String cr = chooseCarrier();
+        if(cr == null) {return;}
+        String ct = chooseCarrierTrip(cr);
+        if(ct == null) {return;}
+        SeatClass sc = chooseSection(cr, ct);
+        if(sc == null) {return;}
+        int cost = promptForInt("New price: ");
+        bsys.changeSectionCost(cr, ct, sc, cost);
     }
 
     private void BookBySeat(Object o) {
+        String cr = chooseCarrier();
+        if(cr == null) {return;}
+        String ct = chooseCarrierTrip(cr);
+        if(ct == null) {return;}
+        SeatClass sc = chooseSection(cr, ct);
+        if(sc == null) {return;}
+        int row = promptForInt("row : ");
+        char col = promptForChar("col : ");
+        mgr.bookTravelSeat(travelType, cr, ct, sc, row, col);
     }
 
     private void BookByPref(Object o) {
+        //TO DO
     }
 
     private void Dump(Object o) {

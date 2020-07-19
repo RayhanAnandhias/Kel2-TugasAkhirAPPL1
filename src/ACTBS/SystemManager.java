@@ -95,13 +95,29 @@ public class SystemManager {
 	public void bookTrainTripSeat(String train, String trainTripID, SeatClass s, int row, char col) {
 		railSystem.bookSeat(train, trainTripID, s, row, col);
 	}
+
+	public void bookTravelSeat(TravelType t, String train, String trainTripID, SeatClass s, int row, char col) {
+		getTravelSystem(t).bookSeat(train, trainTripID, s, row, col);
+	}
 	
 	public void findAvailableFlights(String origin, String dest) {
 		flightSystem.printAvailableTrips(origin, dest);
 	}
 
+	public void findAvailableTrainTrips(String origin, String dest) {
+		railSystem.printAvailableTrips(origin, dest);
+	}
+
+	public void findAvailableBookings(TravelType t, String origin, String dest) {
+		getTravelSystem(t).printAvailableTrips(origin, dest);
+	}
+
 	public void displaySystemDetails() {
 		flightSystem.printSystemDetails();
+	}
+
+	public void displayTrainSystemDetails() {
+		railSystem.printSystemDetails();
 	}
 
 	public void displaySystemDetails(TravelType t) {
