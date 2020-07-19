@@ -52,4 +52,9 @@ public abstract class ObjectWithName {
     public String toExport() {
         return this.name;
     }
+    
+    @Override
+    public String toString() {
+        return this.name;
+    }
 }

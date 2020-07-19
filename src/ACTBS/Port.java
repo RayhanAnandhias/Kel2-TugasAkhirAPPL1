@@ -15,4 +15,9 @@ public abstract class Port extends ObjectWithName {
     public String toExport() {
         return getName();
     }
+    
+    @Override
+    public String toString () {
+		return getName();
+    }
 }

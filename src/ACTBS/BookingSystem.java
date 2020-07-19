@@ -159,7 +159,7 @@ public abstract class BookingSystem {
         ArrayList<Trip> list = findTrips(origin, dest);
         Log.print(String.format("------%s from %s to %s with availability:", getTripType(), origin, dest));
         for (Trip t : list) {
-            Log.print(String.format("%s (%s -> %s), departs %s", t, t.getOrigin(), t.getDest(), t.getDepartureDateStr()));
+            Log.print(String.format("Flight ID: %s (%s -> %s), departs %s", t, t.getOrigin(), t.getDest(), t.getDepartureDateStr()));
         }
         Log.print("------End list");
     }

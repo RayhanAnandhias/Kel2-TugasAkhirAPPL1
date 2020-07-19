@@ -7,8 +7,11 @@
 
 package ACTBS;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 
@@ -180,14 +183,17 @@ public abstract class Trip extends ObjectWithName {
         }
         public TripBuilder setDate( int year, int month, int day, int hour, int min ) {
             Calendar departureDate = Calendar.getInstance();
+            SimpleDateFormat sdfrmt = new SimpleDateFormat("MM/dd/yyyy");
+            sdfrmt.setLenient(false);
             Calendar now;
             try {
+            	Date javaDate = sdfrmt.parse(month+"/"+day+"/"+year);
                 departureDate.set(Calendar.YEAR, year);
                 departureDate.set(Calendar.MONTH, year);
                 departureDate.set(Calendar.DAY_OF_MONTH, year);
                 departureDate.set(Calendar.HOUR_OF_DAY, year);
                 departureDate.set(Calendar.MINUTE, year);
-            } catch ( IllegalArgumentException e ) {
+            } catch ( IllegalArgumentException | ParseException e ) {
                 return null;
             }
 
