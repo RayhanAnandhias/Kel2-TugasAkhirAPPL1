@@ -7,4 +7,4 @@
 package ACTBS;
 
 
-public enum PortType {airport, seaport, trainStation}
+public enum PortType {airport, seaport, station}
