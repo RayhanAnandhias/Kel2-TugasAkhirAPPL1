@@ -32,6 +32,7 @@ Program Travel Booking System ini dibuat untuk mempermudah booking tiket mulai d
 ## Analisis Pendekatan BDD dan DDD
 
 Berikut merupakan link google docs hasil dari reverse engineering yang telah kami lakukan dengan pendekatan BDD dan DDD.
+
 https://docs.google.com/document/d/1QCvR--qWfC50C9qJLy1DP0DbCuLFFNex4fJvgNQG9GM/edit?usp=sharing
 
 ## Pengembangan Fitur
@@ -41,7 +42,7 @@ Untuk beberapa fiturnya dari program itu sendiri belum semuanya sudah terimpleme
 Fitur admin untuk menambahkan stasiun baru ke dalam travel booking system. Kami menambahkan menambahkan class station yang extends terhadap abstract class port.
 ### 2.Fitur Menambah Kereta (Admin)
 -----------
-Fitur admin untuk menambahkan kereta baru ke dalam travel booking system.Kami menambahkan class railroad yang extends terhadap abstract class Carrier.
+Fitur admin untuk menambahkan kereta baru ke dalam travel booking system. Kami menambahkan class railroad yang extends terhadap abstract class Carrier.
 ### 3.Fitur Menambah Train Trip (Admin)
 -----------
 Fitur admin untuk menambahkan rute perjalanan kereta ke dalam travel booking system. Kami menambahkan class TrainTrip yang extends terhadap abstract class Trip.
@@ -51,6 +52,12 @@ Fitur admin untuk menambahkan bagian rute perjalanan kereta. Kami menambahkan cl
 ### 5.Fitur Booking Train Trip
 -----------
 Fitur untuk menambahkan data pemesanan pengguna kereta ke dalam travel booking system. Kami menambahkan class RailSystem yang extends terhadap abstract class BookingSystem. 
+### 6.Fitur Mencari Ketersediaan Travel
+-----------
+Fitur ini digunakan untuk mencari keperluan travel seperti waktu keberangkatan, tanggal keberangkatan, tempat keberangkatan, hingga tujuan dari keberangkatan baik pesawat maupun kereta. 
+### 7.Fitur Menampilkan Detail Sistem
+-----------
+Fitur yang digunakan untuk menampilkan detail keseluruhan sistem sperti melihat tempat duduk yang tersedia atau yang telah dibooking baik pesawat maupun kereta.
 
 ## Diagram Class History
 ![ClassDiagram1](https://github.com/RayhanAnandhias/Kel2-TugasAkhirAPPL1/blob/master/classDiagram1.jpg?raw=true)
@@ -61,6 +68,6 @@ Diagram tersebut merupakan class diagram setelah penambahan sistem booking tiket
 
 Penjelasan Penggunaan Program
 ----------
-* Aplikasi dapat dijalankan dengan menjalankan UI.java pada package UserInterface.
+* Aplikasi dapat dijalankan dengan menjalankan UI.java pada package UserInterface
 * Untuk menu itu sendiri dapat dilihat setelah menjalankan UI.java
 * Untuk menjalankan unit test dapat dilakukan dengan cara menjalankan UnitTest.java dalam (default package)
