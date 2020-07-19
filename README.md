@@ -27,9 +27,11 @@ No | Nama | NIM
 3. Historikan class diagram dan beri penjelasan untuk tiap perubahan
 
 # Travel-Booking-System
-Program Travel Booking System ini dibuat untuk mempermudah booking tiket mulai dari pesawat, kereta, hingga kapal pesiar.
-Dalam program ini terdapat menu untuk admin serta menu untuk user. Menu admin digunakan untuk menambahkan beberapa stasiun, bandara, hingga jadwal penerbangan yang nantinya digunakan untuk sistem booking ini. Untuk beberapa fiturnya itu sendiri belum semuanya sudah diimplementasikan. Dengan begitu kami melakukan pengembangan fitur berdasarkan fitur yang belum diimplementasikan tersebut.
+Program Travel Booking System ini dibuat untuk mempermudah booking tiket mulai dari pesawat, kereta, hingga kapal pesiar. Program ini memungkinkan pengguna untuk melakukan booking terhadap berbagai macam tiket dan melihat kursi mana yang telah dibooking. Dalam program ini terdapat menu untuk admin serta menu untuk user. Menu admin digunakan untuk menambahkan beberapa stasiun, bandara, hingga jadwal penerbangan yang nantinya digunakan untuk sistem booking ini. Berikut merupakan link google docs hasil dari reverse engineering yang telah kami lakukan dengan pendekatan BDD dan DDD.
+https://docs.google.com/document/d/1QCvR--qWfC50C9qJLy1DP0DbCuLFFNex4fJvgNQG9GM/edit?usp=sharing
+
 ## Pengembangan Fitur
+Untuk beberapa fiturnya dari program itu sendiri belum semuanya sudah terimplementasi sehingga kami berencana untuk menyelesaikan fitur tersebut dan menambahkan beberapa fitur baru sebagai berikut.
 ### 1.Fitur Menambah Stasiun (Admin)
 -----------
 Fitur admin untuk menambahkan stasiun baru ke dalam travel booking system. Kami menambahkan menambahkan class station yang extends terhadap abstract class port.
@@ -53,31 +55,8 @@ Diagram di atas merupakan class diagram dari program sebelum penambahan sistem b
 ![ClassDiagram2](https://github.com/RayhanAnandhias/Kel2-TugasAkhirAPPL1/blob/master/FixUML.jpg?raw=true)
 Diagram tersebut merupakan class diagram setelah penambahan sistem booking tiket kereta dan telah mengimplementasikan fitur-fitur yang sebelumnya belum selesai. Namun class diagram tersebut belum mengimplementasikan sistem booking tiket kapal pesiar secara keseluruhan.
 
-DESCRIPTION
------------
-Academic Project from Spring Quarter 2018, CSCD 349 - Design Patterns
-Collaborative app with Tony Kolstee. Designed to read a trip manifest text file formatted in a specific way (parser designed around this format), then display trip data, allow the user to add new data to trip manifest and build trips off this data. Ability to export newly created trips in console appened back into the original text file or to a new one. Able to deliver prices for trips based on certain seating conditions user selects.
-
-HOW TO RUN
+Penjelasan Penggunaan Program
 ----------
-Project created in IntelliJ. 
-* App can be launched from path, "Travel Booking System - Console App/src/UserInterface/UI.java".
-* Main entry point at "UI.java". 
-* During program launch, select menu option, "1: Work with Airline System".
-* In AIR System Menu; if you want to load a premade trip manifest, select option, "1: Read input file" and when prompted to "Enter File Name", use, "AMSin.txt" or "altAMSin.txt" to load data.
-* App can be run from "Tester.java". Standard conditional tester.
-
-KNOWN BUGS
-----------
-No known bugs
-
-NON-FUNCTIONING FEATURES
-------------------------
-
-* Rail and Cruise Ship system not fully implemented
-* Not all Admin features enabled
-
-PLANNED DESIGN UPDATES
-----------------------
-* If file, "AMSin.txt" is read in and then a duplicate airline or port entered causes intended error messages to display. I need to make it so that duplicated entries are just ignored. Error messages look too negative for user experience.
-* Would love to convert this to a GUI app, might do in a future course or on free time as a challenge.
+* Aplikasi dapat dijalankan dengan menjalankan UI.java pada package UserInterface.
+* Untuk menu itu sendiri dapat dilihat setelah menjalankan UI.java
+* Untuk menjalankan unit test dapat dilakukan dengan cara menjalankan UnitTest.java dalam (default package)
