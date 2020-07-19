@@ -41,8 +41,7 @@ No | Nama | NIM
 -----------
 
 ## Diagram Class History
-
-Console App
+![ClassDiagram1.jpg](https://github.com/RayhanAnandhias/Kel2-TugasAkhirAPPL1/blob/master/classDiagram1.jpg?raw=true)
 
 DESCRIPTION
 -----------
