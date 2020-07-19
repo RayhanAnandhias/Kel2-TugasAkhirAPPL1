@@ -68,7 +68,7 @@ public abstract class Trip extends ObjectWithName {
         return String.format("%d, %d, %d, %d, %d", departureYear, departureMonth, departureDay, departureHour, departureMinute);
     }
 
-    public enum TripType {flight}
+    public enum TripType {flight, TrainTrip}
 
     public void bookSeat( SeatClass c, int row, char col ) {
         Section s = getSection(c);

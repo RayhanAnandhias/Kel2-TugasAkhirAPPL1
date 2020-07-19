@@ -7,4 +7,4 @@
 package ACTBS;
 
 
-public enum CarrierType { airline, cruiseline }
+public enum CarrierType { airline, cruiseline, railroad }

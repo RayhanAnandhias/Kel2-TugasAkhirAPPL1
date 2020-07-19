@@ -30,6 +30,10 @@ public class CarrierFactory {
                 l = new CruiseLine();
                 if ( ! l.setName(name)) { l = null; }
                 break;
+            case train:
+                l = new Railroad();
+                if ( ! l.setName(name)) { l = null; }
+                break;
             default:
                 Log.print( "CarrierFactory asked to make nonexistent type " + type );
                 break;

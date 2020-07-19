@@ -18,6 +18,24 @@ public class SystemManager {
     private CruiseSystem cruiseSystem = new CruiseSystem();
     private RailSystem railSystem = new RailSystem();
 
+    public void createTrain(String name) {
+        createCarrier(TravelType.train, name);
+    }
+
+    public void createTrainStation(String name) {
+        createPort(TravelType.train, name);
+    }
+
+    public void createTrainTripSection(String carrierID, String tripID, int rows, int cols,
+        SectionType type, SeatClass sclass, int seatCost) {
+            railSystem.createSection(carrierID, tripID, rows, cols, type, sclass, seatCost);
+    }
+
+    public void createTrainTrip(String TrainName, String origin, String dest, 
+        int year, int month, int day, String id) {
+        createTrip(TravelType.train, TrainName, origin, dest, year, month, day, id);
+    }
+
     public void createAirline( String name ) {
         flightSystem.createCarrier(name);
     }

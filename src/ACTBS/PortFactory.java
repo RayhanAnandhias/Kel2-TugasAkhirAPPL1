@@ -28,6 +28,9 @@ public class PortFactory {
             case sea:
                 p = new Seaport();
                 break;
+            case train:
+                p = new Station();
+                break;
         }
         if (p != null && !p.setName(name)) {
             p = null;
