@@ -27,7 +27,11 @@ No | Nama | NIM
 3. Historikan class diagram dan beri penjelasan untuk tiap perubahan
 
 # Travel-Booking-System
-Program Travel Booking System ini dibuat untuk mempermudah booking tiket mulai dari pesawat, kereta, hingga kapal pesiar. Program ini memungkinkan pengguna untuk melakukan booking terhadap berbagai macam tiket dan melihat kursi mana yang telah dibooking. Dalam program ini terdapat menu untuk admin serta menu untuk user. Menu admin digunakan untuk menambahkan beberapa stasiun, bandara, hingga jadwal penerbangan yang nantinya digunakan untuk sistem booking ini. Berikut merupakan link google docs hasil dari reverse engineering yang telah kami lakukan dengan pendekatan BDD dan DDD.
+Program Travel Booking System ini dibuat untuk mempermudah booking tiket mulai dari pesawat, kereta, hingga kapal pesiar. Program ini memungkinkan pengguna untuk melakukan booking terhadap berbagai macam tiket dan melihat kursi mana yang telah dibooking. Dalam program ini terdapat menu untuk admin serta menu untuk user. Menu admin digunakan untuk menambahkan beberapa stasiun, bandara, hingga jadwal penerbangan yang nantinya digunakan untuk sistem booking ini. 
+
+## Analisis Pendekatan BDD dan DDD
+
+Berikut merupakan link google docs hasil dari reverse engineering yang telah kami lakukan dengan pendekatan BDD dan DDD.
 https://docs.google.com/document/d/1QCvR--qWfC50C9qJLy1DP0DbCuLFFNex4fJvgNQG9GM/edit?usp=sharing
 
 ## Pengembangan Fitur
