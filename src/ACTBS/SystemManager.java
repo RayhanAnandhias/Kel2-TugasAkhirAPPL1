@@ -18,87 +18,103 @@ public class SystemManager {
     private CruiseSystem cruiseSystem = new CruiseSystem();
     private RailSystem railSystem = new RailSystem();
 
-    public void createTrain(String name) {
-        createCarrier(TravelType.train, name);
-    }
-
-    public void createTrainStation(String name) {
-        createPort(TravelType.train, name);
-    }
-
-    public void createTrainTripSection(String carrierID, String tripID, int rows, int cols,
-        SectionType type, SeatClass sclass, int seatCost) {
-            railSystem.createSection(carrierID, tripID, rows, cols, type, sclass, seatCost);
-    }
-
-    public void createTrainTrip(String TrainName, String origin, String dest, 
-        int year, int month, int day, String id) {
-        createTrip(TravelType.train, TrainName, origin, dest, year, month, day, id);
-    }
-
-    public void createAirline( String name ) {
-        flightSystem.createCarrier(name);
-    }
-
     public void createCarrier(TravelType t, String name) {
-        getTravelSystem(t).createCarrier(name);
-    }
+		getTravelSystem(t).createCarrier(name);
+	}
 
-    public void createAirport(String name) {
-        createPort(TravelType.air, name);
-    }
+	public void createTrain(String name) {
+		createCarrier(TravelType.train, name);
+	}
 
-    public void createPort(TravelType t, String name) {
-        getTravelSystem(t).createPort(name);
-    }
+	public void createAirline(String name) {
+		flightSystem.createCarrier(name);
+	}
 
-    public void createFlight( String airlineName, String origin, String dest, int year, int month, int day, String id ) {
-        createTrip(TravelType.air, airlineName, origin, dest, year, month, day, id);
-    }
+	public void createPort(TravelType t, String name) {
+		getTravelSystem(t).createPort(name);
+	}
+	
+	public void createTrainStation(String name) {
+		createPort(TravelType.train, name);
+	}
 
-    public void createTrip(TravelType t, String carrierName, String origin, String dest, int year, int month, int day, String id) {
-        getTravelSystem(t).createTrip(carrierName, origin, dest, year, month, day, id);
-    }
+	public void createAirport(String name) {
+		createPort(TravelType.air, name);
+	}
 
-    public void createSection( String carrierID, String tripID, int rows, int cols, SeatClass sclass ) {
-        flightSystem.createSection(carrierID, tripID, rows, cols, SectionType.flightG, sclass, 0);
-    }
+	public void createTrip(TravelType t, String carrierName, String origin, String dest, int year, int month, int day,
+			String id) {
+		getTravelSystem(t).createTrip(carrierName, origin, dest, year, month, day, id);
+	}
 
-    public void createSection( String carrierID, String tripID, int rows, SectionType type, SeatClass sclass, int seatCost ) {
-        flightSystem.createSection(carrierID, tripID, rows, 1, type, sclass, seatCost);
-    }
+	public void createTrainTrip(String TrainName, String origin, String dest, int year, int month, int day, String id) {
+		createTrip(TravelType.train, TrainName, origin, dest, year, month, day, id);
+	}
 
-    public void createSection(TravelType t, String carrierID, String tripID, int rows, int cols, SeatClass sclass) {
-        getTravelSystem(t).createSection(carrierID, tripID, rows, cols, SectionType.flightG, sclass, 0);
-    }
+	public void createFlight(String airlineName, String origin, String dest, int year, int month, int day, String id) {
+		createTrip(TravelType.air, airlineName, origin, dest, year, month, day, id);
+	}
 
-    public void createSection(TravelType t, String carrierID, String tripID, int rows, SectionType type, SeatClass sclass, int seatCost) {
-        getTravelSystem(t).createSection(carrierID, tripID, rows, 1, type, sclass, seatCost);
-    }
+	public void createFlightSection(String carrierID, String tripID, int rows, int cols, SeatClass sclass) {
+		flightSystem.createSection(carrierID, tripID, rows, cols, SectionType.flightG, sclass, 0);
+	}
+	
+	public void createTrainTripSection(String carrierID, String tripID, int rows, int cols, SeatClass sclass) {
+		railSystem.createSection(carrierID, tripID, rows, cols, SectionType.trainTripM, sclass, 0);
+	}
 
-    public void bookSeat(String airline, String flightID, SeatClass s, int row, char col ) {
-        flightSystem.bookSeat(airline, flightID, s, row, col);
-    }
+	public void createSection(String carrierID, String tripID, int rows, SectionType type, SeatClass sclass,
+			int seatCost) {
+		flightSystem.createSection(carrierID, tripID, rows, 1, type, sclass, seatCost);
+	}
+	
+	public void createTrainTripSection(String carrierID, String tripID, SectionType type, int rows, SeatClass sclass,
+			int seatCost) {
+		railSystem.createSection(carrierID, tripID, rows, 1, type, sclass, seatCost);
+	}
 
-    public void findAvailableFlights( String origin, String dest ) {
-        flightSystem.printAvailableTrips(origin, dest);
-    }
+	public void createSection(TravelType t, String carrierID, String tripID, int rows, SectionType type,
+			SeatClass sclass, int seatCost) {
+		getTravelSystem(t).createSection(carrierID, tripID, rows, 1, type, sclass, seatCost);
+	}
 
-    public void displaySystemDetails() {
-        flightSystem.printSystemDetails();
-    }
+	public void createFlightSection(TravelType t, String carrierID, String tripID, int rows, int cols,
+			SeatClass sclass) {
+		getTravelSystem(t).createSection(carrierID, tripID, rows, cols, SectionType.flightG, sclass, 0);
+	}
+	
+	public void createTrainTriptSection(TravelType t, String carrierID, String tripID, int rows, int cols,
+			SeatClass sclass) {
+		getTravelSystem(t).createSection(carrierID, tripID, rows, cols, SectionType.trainTripM, sclass, 0);
+	}
 
-    public void displaySystemDetails(TravelType t) {
-        getTravelSystem(t).printSystemDetails();
-    }
+	public void bookFlightSeat(String airline, String flightID, SeatClass s, int row, char col) {
+		flightSystem.bookSeat(airline, flightID, s, row, col);
+	}
 
-    public ArrayList<String> getPortNames(TravelType t) {
-        return getTravelSystem(t).listPorts();
-    }
+	public void bookTrainTripSeat(String train, String trainTripID, SeatClass s, int row, char col) {
+		railSystem.bookSeat(train, trainTripID, s, row, col);
+	}
+	
+	public void findAvailableFlights(String origin, String dest) {
+		flightSystem.printAvailableTrips(origin, dest);
+	}
 
-    public ArrayList<String> getCarrierNames(TravelType t) {
-        return getTravelSystem(t).listCarriers();
-    }
+	public void displaySystemDetails() {
+		flightSystem.printSystemDetails();
+	}
+
+	public void displaySystemDetails(TravelType t) {
+		getTravelSystem(t).printSystemDetails();
+	}
+
+	public ArrayList<String> getPortNames(TravelType t) {
+		return getTravelSystem(t).listPorts();
+	}
+
+	public ArrayList<String> getCarrierNames(TravelType t) {
+		return getTravelSystem(t).listCarriers();
+	}
 
     public BookingSystem getTravelSystem(TravelType t) {
         switch (t) {

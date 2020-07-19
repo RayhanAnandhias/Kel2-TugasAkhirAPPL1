@@ -22,8 +22,11 @@ public class SectionFactory {
     public SectionType[] aproposSectionLayouts(TravelType t) {
         switch (t) {
             case air:
-                SectionType[] x = {SectionType.flightS, SectionType.flightM, SectionType.flightW};
-                return x;
+                SectionType[] xAir = {SectionType.flightS, SectionType.flightM, SectionType.flightW};
+                return xAir;
+            case train:
+                SectionType[] xTrain = {SectionType.trainTripS, SectionType.trainTripM};
+                return xTrain;
             default:
                 SectionType[] y = {};
                 return y;
@@ -33,8 +36,11 @@ public class SectionFactory {
     public SeatClass[] aproposSeatClasses(TravelType t) {
         switch (t) {
             case air:
-                SeatClass[] x = {SeatClass.first, SeatClass.economy, SeatClass.business};
-                return x;
+                SeatClass[] xAir = {SeatClass.first, SeatClass.economy, SeatClass.business};
+                return xAir;
+            case train:
+                SeatClass[] xTrain = {SeatClass.first, SeatClass.economy};
+                return xTrain;
             default:
                 SeatClass[] y = {};
                 return y;
@@ -63,6 +69,12 @@ public class SectionFactory {
                 break;
             case flightW:
                 s = new FlightSectionW(rows, seatClass, seatCost);
+                break;
+            case trainTripM:
+                s = new RailSectionM(rows, seatClass, seatCost);
+                break;
+            case trainTripS:
+                s = new RailSectionM(rows, seatClass, seatCost);
                 break;
             default:
                 throw new IllegalArgumentException( "No type " + type + "." );

@@ -6,13 +6,14 @@
 
 package ACTBS;
 
+import ACTBS.Trip.TripBuilder;
 import java.util.ArrayList;
 import java.util.List;
 
 
 public abstract class BookingSystem {
     // SPECIFIERS
-    public abstract String getTripType();
+    public abstract Trip.TripType getTripType();
     public abstract String getCarrierType();
     public abstract String getPortType();
     public abstract TravelType travelType();
@@ -84,11 +85,11 @@ public abstract class BookingSystem {
     }
 
     public void createTrip(String carrierName, String origin, String dest, int year, int month, int day, int hour, int min, String id) {
-        Trip.TripBuilder builder = new Trip.TripBuilder(Trip.TripType.flight);
+        Trip.TripBuilder builder = new Trip.TripBuilder(getTripType());
 
         Carrier carrier = findCarrier(carrierName);
         if (carrier == null) {
-            Log.print(String.format("Invalid %s for flight id %s.", getCarrierType(), id));
+            Log.print(String.format("Invalid %s for %s id %s.", getCarrierType(), getTripType(), id));
             return;
         }
         builder = builder.setOrigin(findPort(origin));

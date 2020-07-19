@@ -68,7 +68,7 @@ public abstract class Trip extends ObjectWithName {
         return String.format("%d, %d, %d, %d, %d", departureYear, departureMonth, departureDay, departureHour, departureMinute);
     }
 
-    public enum TripType {flight, TrainTrip}
+    public enum TripType {flight, trainTrip, cruise}
 
     public void bookSeat( SeatClass c, int row, char col ) {
         Section s = getSection(c);
@@ -148,6 +148,9 @@ public abstract class Trip extends ObjectWithName {
             switch ( type ) {
                 case flight:
                     instance = new Flight();
+                    break;
+                case trainTrip:
+                    instance = new TrainTrip();
                     break;
                 default:
                     throw new IllegalArgumentException( "Invalid type" );

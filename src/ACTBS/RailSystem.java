@@ -6,10 +6,11 @@
 
 package ACTBS;
 
+import ACTBS.Trip.TripType;
 
 public class RailSystem extends BookingSystem {
-    public String getTripType() {
-        return "Train Trip";
+    public Trip.TripType getTripType() {
+        return Trip.TripType.trainTrip;
     }
     public String getPortType() { return "Train Station"; }
     public String getCarrierType() { return "Railroad"; }

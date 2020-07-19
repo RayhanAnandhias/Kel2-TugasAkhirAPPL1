@@ -41,6 +41,54 @@ public class UnitTest {
 	}
 
 	@Test
+	public void TestAddTrainStation()  {
+		res.createTrainStation("BDG");
+		res.createTrainStation("JKT");
+		assertEquals(NO_ERROR, outContent.toString());
+	}
+
+	@Test
+	public void TestAddTrainStationDuplicate()  {
+		res.createTrainStation("BDG");
+		res.createTrainStation("BDG");
+		assertNotEquals(NO_ERROR, outContent.toString());
+	}
+
+	@Test
+	public void TestAddTrainStationError()  {
+		res.createTrainStation("BDGG");
+		assertNotEquals(NO_ERROR, outContent.toString());
+	}
+
+	@Test
+	public void TestAddRailRoad()  {
+		res.createTrain("serayu");
+		assertEquals(NO_ERROR, outContent.toString());
+	}
+
+	@Test
+	public void TestAddRailRoadError()  {
+		res.createTrain("abcdefghijklmnopqrstuvwxyz");
+		assertNotEquals(NO_ERROR, outContent.toString());
+	}
+
+	@Test
+	public void TestAddRailRoadDuplicate()  {
+		res.createTrain("serayu");
+		res.createTrain("serayu");
+		assertNotEquals(NO_ERROR, outContent.toString());
+	}
+
+	@Test
+	public void TestAddCreateTrainTrip() {
+		res.createTrainStation("BDG");
+		res.createTrainStation("JKT");
+		res.createTrain("SERAYU");
+		res.createTrainTrip("SERAYU", "BDG", "JKT", 2000, 7, 19, "ABC123");
+		assertEquals(NO_ERROR, outContent.toString());
+	}
+
+	@Test
 	public void TestAddAirport() {
 	    res.createAirport("DEN");
 	    assertEquals(NO_ERROR, outContent.toString());
@@ -99,8 +147,8 @@ public class UnitTest {
 		res.createAirport("LON");
 		res.createAirline("DELTA");
 		res.createFlight("DELTA", "DEN", "LON", 2018, 10, 10, "123");
-		res.createSection("DELTA","123", 2, 3, SeatClass.first);
-		res.createSection("DELTA","123", 2, 2, SeatClass.economy);
+		res.createFlightSection("DELTA","123", 2, 3, SeatClass.first);
+		res.createFlightSection("DELTA","123", 2, 2, SeatClass.economy);
 	    assertEquals(NO_ERROR, outContent.toString());
 	}
 	
@@ -110,16 +158,16 @@ public class UnitTest {
 		res.createAirport("LON");
 		res.createAirline("DELTA");
 		res.createFlight("DELTA", "DEN", "LON", 2018, 10, 10, "123");
-		res.createSection("DELTA","123", 2, 3, SeatClass.first);
-		res.createSection("DELTA","123", 2, 2, SeatClass.economy);
-		res.createSection("DELTA","123", 2, 3, SeatClass.first);
+		res.createFlightSection("DELTA","123", 2, 3, SeatClass.first);
+		res.createFlightSection("DELTA","123", 2, 2, SeatClass.economy);
+		res.createFlightSection("DELTA","123", 2, 3, SeatClass.first);
 	    assertNotEquals(NO_ERROR, outContent.toString());
 	}
 	
 	@Test
 	public void TestCreateSectionError() {
 		res.createAirline("DELTA1");
-		res.createSection("DELTA","123", 2, 2, SeatClass.economy);
+		res.createFlightSection("DELTA","123", 2, 2, SeatClass.economy);
 	    assertNotEquals(NO_ERROR, outContent.toString());
 	}
 	
@@ -129,8 +177,8 @@ public class UnitTest {
 		res.createAirport("LON");
 		res.createAirline("DELTA");
 		res.createFlight("DELTA", "DEN", "LON", 2018, 10, 10, "123");
-		res.createSection("DELTA","123", 2, 3, SeatClass.first);
-		res.createSection("ALPHA","123", 2, 2, SeatClass.economy);
+		res.createFlightSection("DELTA","123", 2, 3, SeatClass.first);
+		res.createFlightSection("ALPHA","123", 2, 2, SeatClass.economy);
 	    assertNotEquals(NO_ERROR, outContent.toString());
 	}
 	
@@ -140,9 +188,9 @@ public class UnitTest {
 		res.createAirport("LON");
 		res.createAirline("DELTA");
 		res.createFlight("DELTA", "DEN", "LON", 2018, 10, 10, "123");
-		res.createSection("DELTA","123", 2, 3, SeatClass.first);
-		res.createSection("DELTA","123", 2, 2, SeatClass.economy);
-		res.bookSeat("DELTA", "123", SeatClass.first, 1, 'A');
+		res.createFlightSection("DELTA","123", 2, 3, SeatClass.first);
+		res.createFlightSection("DELTA","123", 2, 2, SeatClass.economy);
+		res.bookFlightSeat("DELTA", "123", SeatClass.first, 1, 'A');
 	    assertEquals(NO_ERROR, outContent.toString());
 	}
 	
@@ -152,9 +200,9 @@ public class UnitTest {
 		res.createAirport("LON");
 		res.createAirline("DELTA");
 		res.createFlight("DELTA", "DEN", "LON", 2018, 10, 10, "123");
-		res.createSection("DELTA","123", 2, 3, SeatClass.first);
-		res.createSection("DELTA","123", 2, 2, SeatClass.economy);
-		res.bookSeat("DELTA", "123", SeatClass.first, 4, 'A');
+		res.createFlightSection("DELTA","123", 2, 3, SeatClass.first);
+		res.createFlightSection("DELTA","123", 2, 2, SeatClass.economy);
+		res.bookFlightSeat("DELTA", "123", SeatClass.first, 4, 'A');
 	    assertNotEquals(NO_ERROR, outContent.toString());
 	}
 	
@@ -164,10 +212,10 @@ public class UnitTest {
 		res.createAirport("LON");
 		res.createAirline("DELTA");
 		res.createFlight("DELTA", "DEN", "LON", 2018, 10, 10, "123");
-		res.createSection("DELTA","123", 2, 3, SeatClass.first);
-		res.createSection("DELTA","123", 2, 2, SeatClass.economy);
-		res.bookSeat("DELTA", "123", SeatClass.first, 1, 'A');
-		res.bookSeat("DELTA", "123", SeatClass.first, 1, 'A');
+		res.createFlightSection("DELTA","123", 2, 3, SeatClass.first);
+		res.createFlightSection("DELTA","123", 2, 2, SeatClass.economy);
+		res.bookFlightSeat("DELTA", "123", SeatClass.first, 1, 'A');
+		res.bookFlightSeat("DELTA", "123", SeatClass.first, 1, 'A');
 	    assertNotEquals(NO_ERROR, outContent.toString());
 	}
 	
@@ -177,10 +225,10 @@ public class UnitTest {
 		res.createAirport("LON");
 		res.createAirline("DELTA");
 		res.createFlight("DELTA", "DEN", "LON", 2018, 10, 10, "123");
-		res.createSection("DELTA","123", 2, 3, SeatClass.first);
-		res.createSection("DELTA","123", 2, 2, SeatClass.economy);
-		res.bookSeat("DELTA", "123", SeatClass.first, 1, 'A');
-		res.bookSeat("DELTA", "123", SeatClass.first, 1, 'A');
+		res.createFlightSection("DELTA","123", 2, 3, SeatClass.first);
+		res.createFlightSection("DELTA","123", 2, 2, SeatClass.economy);
+		res.bookFlightSeat("DELTA", "123", SeatClass.first, 1, 'A');
+		res.bookFlightSeat("DELTA", "123", SeatClass.first, 1, 'A');
 		res.findAvailableFlights("DEN", "LON");
 	    assertNotEquals(NO_ERROR, outContent.toString());
 	}

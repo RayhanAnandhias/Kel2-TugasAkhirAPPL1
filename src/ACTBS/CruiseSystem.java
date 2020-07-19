@@ -6,10 +6,11 @@
 
 package ACTBS;
 
+import ACTBS.Trip.TripType;
 
 public class CruiseSystem extends BookingSystem {
-    public String getTripType() {
-        return "Cruise";
+    public Trip.TripType getTripType() {
+        return Trip.TripType.cruise;
     }
     public String getPortType() { return "Sea Port"; }
     public String getCarrierType() { return "Cruise Line"; }

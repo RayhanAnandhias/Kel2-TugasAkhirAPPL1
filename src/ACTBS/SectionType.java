@@ -8,6 +8,8 @@ package ACTBS;
 
 
 public enum SectionType {
+    trainTripM("M"),
+    trainTripS("S"),
     flightG("G"),
     flightS("S"),
     flightM("M"),

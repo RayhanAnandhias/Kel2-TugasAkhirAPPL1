@@ -6,10 +6,11 @@
 
 package ACTBS;
 
+import ACTBS.Trip.TripType;
 
 public class FlightSystem extends BookingSystem {
-    public String getTripType() {
-        return "Flight";
+    public Trip.TripType getTripType() {
+        return Trip.TripType.flight;
     }
     public String getPortType() {
         return "Airport";
