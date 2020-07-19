@@ -18,7 +18,7 @@ public abstract class Carrier extends ObjectWithName {
     public void addSectionToTrip ( String tripID, Section s ) {
         Trip t = (Trip) SearchList( tripID, trips );
         if (t == null) {
-            Log.print("Cannot add section to nonexistent trip " + tripID);
+            Log.print("Cannot add section to non-existent trip " + tripID);
             return;
         }
         t.addSection(s);

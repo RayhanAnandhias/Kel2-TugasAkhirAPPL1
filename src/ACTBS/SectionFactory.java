@@ -74,7 +74,7 @@ public class SectionFactory {
                 s = new RailSectionM(rows, seatClass, seatCost);
                 break;
             case trainTripS:
-                s = new RailSectionM(rows, seatClass, seatCost);
+                s = new RailSectionS(rows, seatClass, seatCost);
                 break;
             default:
                 throw new IllegalArgumentException( "No type " + type + "." );
